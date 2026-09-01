@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Miyazaki Minutos | Paquetes de llamadas</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background: linear-gradient(135deg, #07142c, #123e75);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: rgba(5, 17, 40, 0.95);
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #45e0ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #45e0ff;
+        }
+
+        .hero {
+            min-height: 580px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 70px 20px;
+            background:
+                radial-gradient(circle at top, rgba(40, 201, 255, 0.25), transparent 45%),
+                linear-gradient(135deg, #07142c, #174d8a);
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .phone-icon {
+            font-size: 75px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #45e0ff;
+        }
+
+        .hero p {
+            font-size: 21px;
+            line-height: 1.7;
+            color: #dcecff;
+            margin-bottom: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            color: #06142c;
+            background: #45e0ff;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: white;
+            transform: translateY(-3px);
+        }
+
+        .services {
+            padding: 80px 8%;
+            text-align: center;
+            background: #f4f8ff;
+            color: #102548;
+        }
+
+        .services h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: #60708d;
+            margin-bottom: 45px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(15, 45, 85, 0.12);
+            border-top: 5px solid #29bde6;
+        }
+
+        .card-icon {
+            font-size: 45px;
+            margin-bottom: 18px;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #123e75;
+        }
+
+        .card p {
+            color: #66748c;
+            line-height: 1.6;
+        }
+
+        .about {
+            padding: 80px 10%;
+            text-align: center;
+            background: #0a2349;
+        }
+
+        .about h2 {
+            font-size: 37px;
+            color: #45e0ff;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #dcecff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #050e20;
+            color: #a8bedc;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">📞 Miyazaki Minutos</div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#nosotros">Nosotros</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <div class="phone-icon">📱</div>
+
+                <h1>Minutos para mantenerte <span>conectado</span></h1>
+
+                <p>
+                    Encuentra paquetes de minutos para llamadas nacionales e
+                    internacionales. Comunicación fácil, rápida y confiable.
+                </p>
+
+                <a href="#servicios" class="button">Ver nuestros servicios</a>
+            </div>
+        </section>
+
+        <section class="services" id="servicios">
+            <h2>Nuestros servicios</h2>
+
+            <p class="subtitle">
+                Diferentes opciones para tus necesidades de comunicación.
+            </p>
+
+            <div class="cards">
+                <article class="card">
+                    <div class="card-icon">☎️</div>
+                    <h3>Minutos nacionales</h3>
+                    <p>
+                        Paquetes de minutos para comunicarte dentro del país.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">🌎</div>
+                    <h3>Llamadas internacionales</h3>
+                    <p>
+                        Mantente cerca de familiares, amigos y clientes en otros países.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Recargas rápidas</h3>
+                    <p>
+                        Solicita tus minutos de forma sencilla, segura y rápida.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">💬</div>
+                    <h3>Atención al cliente</h3>
+                    <p>
+                        Orientación para escoger el paquete de llamadas adecuado.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="about" id="nosotros">
+            <h2>Acerca de Miyazaki Minutos</h2>
+
+            <p>
+                Somos una microempresa dedicada a ofrecer soluciones de comunicación,
+                recargas y paquetes de minutos para llamadas. Nuestro propósito es
+                ayudarte a permanecer conectado dondequiera que estés.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Miyazaki Minutos — Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
